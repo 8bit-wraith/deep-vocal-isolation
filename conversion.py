@@ -170,8 +170,8 @@ def handle_image(filename, args):
 
     outname = filename \
         + file_suffix("Output", fft=args.fft, iter=args.iter) \
-        + ".wav", sample_rate
-    save_audio_file(audio, outname)
+        + ".wav"
+    save_audio_file(audio, outname, sample_rate)
 
 
 if __name__ == "__main__":
